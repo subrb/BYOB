@@ -23,6 +23,13 @@
     <%= f.label :price %><br />
     <%= f.number_field :price %>
   </div>
+  
+  <div class="ethnic_group">
+  	<%= f.fields_for :ethnic_group do |e| %>
+  	  <%= e.text_field :name %>
+  	<% end %>
+  </div>
+  
   <div class="actions">
     <%= f.submit %>
   </div>
